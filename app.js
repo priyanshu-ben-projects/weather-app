@@ -14,7 +14,7 @@ async function weatherDetails(event) {
 
     console.log(data);
 
-    showPlace.textContent = `Country : ${data.name}`;
+    showPlace.textContent = `Country : ${data.sys.country}`;
     humidity.textContent = `Humidity : ${data.main.humidity}`;
     temp.textContent = `Temperature : ${data.main.temp} °C`;
 
